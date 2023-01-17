@@ -14,18 +14,19 @@ body {
   align-items: stretch;
   justify-content: stretch;
   background-color: #D4D9DE;
+  color: #222;
 }
 
-@media (min-width: 600px) {
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (min-width: 620px) {
   body {
     background-attachment: fixed;
     background-image: url(./assets/background.svg);
     background-position: right bottom;
     background-repeat: no-repeat;
     }
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

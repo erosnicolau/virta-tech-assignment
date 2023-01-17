@@ -1,0 +1,23 @@
+header {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+img {
+  vertical-align: middle;
+  transform: translate(-1rem, -1rem);
+}
+
+span {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 620px) {
+  span {
+    display: inline-block;
+    transform: translateY(-0.75rem);
+    margin-bottom: unset;
+  }
+}

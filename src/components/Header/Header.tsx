@@ -1,10 +1,11 @@
 import logo from '../../assets/virtaLogo.svg'
+import './header.css'
 
 export default function Header() {
   return (
     <header>
       <img src={logo} alt='VIRTA' />
-      <h1>Virta platform compatible countries</h1>
+      <span>Virta platform compatible countries</span>
     </header>
   )
 }

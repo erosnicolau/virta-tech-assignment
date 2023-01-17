@@ -2,6 +2,7 @@ import { getCountries } from '../../utils/countries';
 import Country from '../Country/Country';
 import { useState, useEffect } from 'react';
 import Flags from 'country-flag-icons/react/3x2'
+import './countryList.css'
 
 interface ICountry {
   code: string;
@@ -45,6 +46,7 @@ export const CountryList: React.FC = () => {
 
   return (
     <div>
+      <h1>Compatible Countries</h1>
       {countries?.map((country: ICountry) => (
         <Country
           key={country.code}
