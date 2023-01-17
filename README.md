@@ -1,4 +1,4 @@
-# Demo TMDB React app
+# Demo React + Typescript app
 
 This project was created by the author as a Tech Assignment test.
 
