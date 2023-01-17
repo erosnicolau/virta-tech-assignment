@@ -1,7 +1,10 @@
-import React from 'react'
+import logo from '../../assets/virtaLogo.svg'
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <header>
+      <img src={logo} alt='VIRTA' />
+      <h1>Virta platform compatible countries</h1>
+    </header>
   )
 }

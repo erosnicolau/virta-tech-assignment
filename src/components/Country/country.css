@@ -1,0 +1,11 @@
+.flag {
+  width: 21px;
+}
+
+.available {
+  fill: #00AD09;
+}
+
+.unavailable {
+  fill: #FF0000;
+}
