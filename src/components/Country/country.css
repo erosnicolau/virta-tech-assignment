@@ -10,7 +10,67 @@
   fill: #FF0000;
 }
 
-.enabled {
-  border: solid 1px green;
-  background-color: lightgreen;
+.country {
+  position: relative;
+  max-width: 608px;
+  margin: auto;
+  background: white;
+  margin-bottom: 8px;
+  font-feature-settings: 'ss04' on;
+  padding: .5rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+}
+
+.country:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: .25rem;
+  border-radius: 0 .5rem .5rem 0;
+  background-color: #FF0000;
+}
+
+.country.available:before {
+  background-color: #00AD09;
+}
+
+.country h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  color: #222222;
+}
+
+.country > div {
+  font-size: .874rem;
+  color: #5F5F5F;
+}
+
+.countryName {
+  text-align: left;
+}
+
+.countryCode {
+  text-align: left;
+}
+
+.countryDetails {
+  display: grid;
+  align-items: center;
+}
+
+
+@media (min-width: 600px) {
+  .countryDetails {
+    grid-template-columns: 2fr 1fr;
+  }
+  .countryCode {
+    text-align: right;
+  }
+}
+@media (min-width: 1281px) {
 }

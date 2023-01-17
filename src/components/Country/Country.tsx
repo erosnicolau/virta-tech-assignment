@@ -15,16 +15,24 @@ const Country: React.FC<CountryProps> = (props) => {
   const {name, code, iso3, otpInAppEnabled, dialCode, defaultTimezone} = props;
   const Flag = Flags[code]
   return (
-    <div className={otpInAppEnabled ? "enabled" : ""}>
-      <Flag className='flag' />
-      <p>Name: {name}</p>
-      <p>Code: {code}</p>
-      <p>ISO3: {iso3}</p>
-      <p>Dial Code: {dialCode}</p>
-      <p>Timezone: {defaultTimezone}</p>
-      {otpInAppEnabled ? 
-      <CheckmarkFilled size='20' className='available' />:
-      <CloseFilled size='20' className='unavailable' />}
+    <div className={'country' + (otpInAppEnabled ? " available" : "")}>
+      <div className="countryFlag">
+        <Flag className='flag' />
+      </div>
+      <div className='countryDetails'>
+        <div className="countryName">
+          <h3>{name}</h3>
+          <div>Timezone: {defaultTimezone}</div>
+        </div>
+        <div className='countryCode'>Country Code: ({iso3})</div>
+      </div>
+      <div className="countryAvailability">
+      {
+        otpInAppEnabled ? 
+          <CheckmarkFilled size='20' className='available' />:
+          <CloseFilled size='20' className='unavailable' />
+      }
+      </div>
     </div>
   );
 }

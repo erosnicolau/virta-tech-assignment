@@ -9,14 +9,20 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #D4D9DE;
-  background-image: url(./assets/background.svg);
-  background-position: right bottom;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: stretch;
+  background-color: #D4D9DE;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-attachment: fixed;
+    background-image: url(./assets/background.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    }
 }
 
 code {
