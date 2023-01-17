@@ -9,3 +9,8 @@
 .unavailable {
   fill: #FF0000;
 }
+
+.enabled {
+  border: solid 1px green;
+  background-color: lightgreen;
+}
